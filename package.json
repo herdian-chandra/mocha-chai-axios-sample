@@ -1,0 +1,32 @@
+{
+  "name": "mocha-chai-axios-sample",
+  "version": "1.0.0",
+  "description": "API automation portfolio project using Mocha, Chai, and Axios",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf mochawesome-report",
+    "test": "npm run clean && mocha ./api-test/*.js --timeout 20000 --reporter mochawesome"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "api-testing",
+    "mocha",
+    "chai",
+    "axios",
+    "portfolio"
+  ],
+  "author": "Herdian Chandra",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "axios": "^1.14.0",
+    "chai": "^6.2.2",
+    "cross-env": "^10.1.0",
+    "mocha": "^11.3.0",
+    "mochawesome": "^7.1.4",
+    "properties-reader": "^3.0.1",
+    "rimraf": "^6.1.3"
+  }
+}
